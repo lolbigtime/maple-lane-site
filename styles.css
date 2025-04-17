@@ -60,7 +60,7 @@ nav a {
 }
 
 .hero {
-  background: url('images/oregon_coast_upscaled.png') no-repeat center center/cover;
+  background: url('images/hero_background.png') no-repeat center center/cover;
   height: 650px;
   display: flex;
   flex-direction: column;
