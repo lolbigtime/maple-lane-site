@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: white;
+  background-color: #2d572c; /* deep green */
   padding: 1rem 0;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
@@ -29,10 +29,22 @@ header {
   align-items: center;
 }
 
-.logo {
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2d572c;
+  color: white;
+  letter-spacing: 0.5px;
 }
 
 nav ul {
@@ -42,14 +54,14 @@ nav ul {
 }
 
 nav a {
-  color: #111;
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
 .hero {
-  background: url('images/rv-campsite.png') no-repeat center center/cover;
-  height: 500px;
+  background: url('images/oregon_coast_upscaled.png') no-repeat center center/cover;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +98,8 @@ nav a {
   border-radius: 10px;
   width: 90%;
   max-width: 1100px;
-  margin: 2rem auto;
+  margin: -50px auto 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .feature {
@@ -130,22 +143,4 @@ nav a {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
-}
-
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.logo-img {
-  height: 40px;
-  width: auto;
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2d572c;
-  letter-spacing: 0.5px;
 }
