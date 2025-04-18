@@ -25,40 +25,33 @@
   </header>
 
   <section class="hero">
+    <video autoplay muted loop playsinline class="hero-bg">
+      <source src="videos/oregon-coast.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <div class="hero-content">
       <h2>Discover the Magic of the Central Oregon Coast</h2>
       <a href="#reserve" class="btn">Reserve</a>
     </div>
-
-    <section class="features">
-      <div class="feature">
-        <img src="images/icons/rv-icon.png" alt="RV icon">
-        <h3>Accommodations</h3>
-        <p>RV sites and tent camping available</p>
-      </div>
-      <div class="feature">
-        <img src="images/icons/tree-icon.png" alt="Tree icon">
-        <h3>Amenities</h3>
-        <p>Full hookups, marina, and more</p>
-      </div>
-      <div class="feature">
-        <img src="images/icons/mountains-icon.png" alt="Mountains icon">
-        <h3>Attractions</h3>
-        <p>Explore the Oregon coast and beyond</p>
-      </div>
-    </section>
   </section>
 
   <section class="about">
     <div class="container">
       <div class="text">
         <h2>About Us</h2>
-        <p>Maple Lane RV Park & Marina is located in Mapleton, Oregon. Along the Siuslaw River, it provides 46 RV sites with full hook-ups, tent camping options, a marina with boat slips, and various recreational areas.</p>
+        <p>Maple Lane RV Park & Marina is located in Mapleton, Oregon. Along the Central Oregon Coast, it provides 46 RV sites with full hook-ups, tent camping options, a marina with boat slips, and various recreational areas.</p>
       </div>
       <div class="image">
         <img src="images/rv-campsite.jpg" alt="RV campsite near river">
       </div>
     </div>
   </section>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      header.classList.toggle("scrolled", window.scrollY > 10);
+    });
+  </script>
 </body>
 </html>
