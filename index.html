@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maple Lane RV Park</title>
+  <title>Maple Lane RV Park & Marina</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header id="main-header">
+  <header>
     <div class="container">
       <div class="logo-wrap">
         <img src="images/logo.png" alt="Maple Lane Logo" class="logo-img" />
@@ -26,8 +25,9 @@
   </header>
 
   <section class="hero">
-    <video class="hero-bg" autoplay muted loop playsinline>
-      <source src="media/hero.mp4" type="video/mp4" />
+    <video autoplay muted loop playsinline class="hero-bg">
+      <source src="videos/oregon-coast.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
     <div class="hero-content">
       <h2>Discover the Magic of the Central Oregon Coast</h2>
@@ -35,50 +35,70 @@
     </div>
   </section>
 
-  <section class="highlight">
-    <div class="highlight-content">
-      <div class="highlight-image">
-        <img src="images/adventure.jpg" alt="Adventure in Oregon" />
+  <section class="about">
+    <div class="container">
+      <div class="text">
+        <h2>About Maple Lane</h2>
+        <p>Maple Lane RV Park & Marina is your peaceful getaway near the heart of the Oregon Coast. Located just minutes from Florence, enjoy full hook-up RV sites, tent camping, a marina, and access to the majestic Siuslaw River. It’s the perfect launchpad to explore the Oregon Dunes, go fishing, or simply unwind in nature.</p>
       </div>
-      <div class="highlight-text">
-        <h2>Adventure Awaits</h2>
-        <p>
-          Experience the unique beauty of the Oregon Dunes, the charming town of Florence, and the rich natural surroundings of the central coast.
-        </p>
+      <div class="image">
+        <img src="images/rv-campsite.jpg" alt="RV campsite near river" />
       </div>
     </div>
   </section>
 
-  <section class="amenities-gallery" id="amenities">
+  <section class="amenities-gallery">
     <h2>Our Amenities</h2>
     <p class="gallery-subtitle">Everything you need for a comfortable and adventurous stay</p>
     <div class="amenities-container">
       <div class="amenity">
-        <span>Hiking</span>
-        <img src="images/amenities/hiking.jpg" alt="Hiking" />
+        <img src="images/amenities/hiking.jpg" alt="Hiking">
+        <span>HIKING</span>
       </div>
       <div class="amenity">
-        <span>Fishing</span>
-        <img src="images/amenities/fishing.jpg" alt="Fishing" />
+        <img src="images/amenities/fishing.jpg" alt="Fishing">
+        <span>FISHING</span>
       </div>
       <div class="amenity">
-        <span>Showers</span>
-        <img src="images/amenities/showers.jpg" alt="Showers" />
+        <img src="images/amenities/showers.jpg" alt="Showers">
+        <span>SHOWERS</span>
       </div>
       <div class="amenity">
-        <span>WiFi</span>
-        <img src="images/amenities/wifi.jpg" alt="WiFi" />
+        <img src="images/amenities/wifi.jpg" alt="WiFi">
+        <span>WIFI</span>
       </div>
       <div class="amenity">
-        <span>Laundry</span>
-        <img src="images/amenities/laundry.jpg" alt="Laundry" />
+        <img src="images/amenities/laundry.jpg" alt="Laundry">
+        <span>LAUNDRY</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <div class="container highlight-content">
+      <div class="highlight-image">
+        <img src="images/oregon-dunes.jpg" alt="Oregon Dunes Adventure" />
+      </div>
+      <div class="highlight-text">
+        <h2>Adventure Awaits</h2>
+        <p>Experience the magic of coastal Oregon: hike through misty forests, ride ATVs across the dunes, or relax at sunset with a firepit by the river. Whether you're seeking adventure or tranquility, Maple Lane offers the best of both worlds.</p>
       </div>
     </div>
   </section>
 
   <section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.839106872128!2d-123.85975908488574!3d44.033944979110985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c09083f7fd99c7%3A0x8603d41c7d1378e!2sMapleton%2C%20OR%2097424!5e0!3m2!1sen!2sus!4v1680558467085!5m2!1sen!2sus"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10869.08740664197!2d-123.86940461577873!3d44.036292737078215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c031df3e373cb5%3A0x586fb9e8a0d8b84b!2sMaple%20Lane%20RV%20Park!5e0!3m2!1sen!2sus!4v1713364210000"
+      width="100%" height="400" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </section>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      header.classList.toggle("scrolled", window.scrollY > 10);
+    });
+  </script>
 </body>
 </html>
