@@ -238,7 +238,7 @@ nav a {
 
 .amenities-gallery {
   background-color: #f6f9f7;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   text-align: center;
   color: #222;
 }
@@ -260,33 +260,28 @@ nav a {
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 .amenity {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  max-width: 320px;
+  width: 220px;
 }
 
 .amenity img {
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 12px;
   object-fit: cover;
 }
 
 .amenity span {
-  padding: 1rem;
+  margin-top: 1rem;
   font-weight: 700;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
   font-size: 1rem;
+  color: #2d2d2d;
   letter-spacing: 1px;
 }
