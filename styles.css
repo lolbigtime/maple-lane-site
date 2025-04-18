@@ -139,14 +139,49 @@ nav a {
 }
 
 
-@keyframes wave {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(-3px); }
-  50% { transform: translateY(0); }
-  75% { transform: translateY(3px); }
-  100% { transform: translateY(0); }
+.highlight {
+  background-color: #f2f5f3;
+  padding: 4rem 0;
+  color: #222;
 }
 
-.btn:hover {
-  animation: wave 0.5s ease-in-out infinite;
+.highlight-content {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.highlight-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.highlight-text {
+  flex: 1;
+}
+
+.highlight-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #2d572c;
+}
+
+.highlight-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  margin: 0;
+  display: block;
 }
