@@ -232,10 +232,46 @@ nav a {
   width: 320px;
 }
 
+
+.amenities-gallery {
+  background-color: #f6f9f7;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #222;
+}
+
+.amenities-gallery h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #555;
+}
+
+.amenities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.amenity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
 .amenity span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: #1a1a1a;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -243,7 +279,7 @@ nav a {
 
 .amenity img {
   width: 100%;
-  height: 400px;
+  height: 200px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
