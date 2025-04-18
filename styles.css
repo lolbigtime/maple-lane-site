@@ -185,18 +185,6 @@ nav a {
   display: block;
 }
 
-
-
-
-.amenity span {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-top: 0.75rem;
-}
-
-
 .amenities-gallery {
   background-color: #f6f9f7;
   padding: 5rem 2rem;
