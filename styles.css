@@ -185,3 +185,53 @@ nav a {
   margin: 0;
   display: block;
 }
+
+
+.amenities-gallery {
+  background-color: #f6f9f7;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #222;
+}
+
+.amenities-gallery h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.amenities-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.amenity {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amenity img {
+  width: 100%;
+  border-radius: 12px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.amenity span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0.75rem;
+}
