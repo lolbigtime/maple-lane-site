@@ -268,20 +268,21 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 240px;
+  width: 300px;
 }
 
 .amenity span {
   margin-bottom: 1rem;
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 900;
+  font-size: 1.3rem;
   color: #1a1a1a;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .amenity img {
   width: 100%;
-  height: 280px;
+  height: 360px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
